@@ -1,4 +1,4 @@
-We provide the pretrained weighs of the 3 models used in Table 1 from the paper.
+We provide the pretrained weights of the 3 models used in Table 1 from the paper.
 
 ##########################################################
 

@@ -19,6 +19,6 @@ python downstream_frag_old.py --dataset <dataset name> --pretrain_path pretrain/
 ##########################################################
 
 The ranges of values from the paper:
-* <drop rate> should be from {0.0,0.5}
-* <seed> should be from [0,9]
+* `<drop rate>` should be from {0.0,0.5}
+* `<seed>` should be from [0,9]
  

@@ -19,6 +19,14 @@ In this repository, we provide the code used in the NeurIPS 2023 paper **Fragmen
 
 ## Environment
 
+The source code is organized into 2 directories:
+* `mol`: experiments on small molecule prediction tasks, corresponding to `Table 2` from the paper.
+* `long-range`: experiments on long-range datasets, corresponding to `Table 3` from the paper.
+
+The folders contain different chemical featurizations and GNN implementations. To ensure fair comparison with previous works, the `mol` folder contains codes compatible with those from Hu et al. (2019). On the other hand, `long-range` folder contains newer codes, with featurizations and GNN implementations provided in Open Graph Benchmark. As a result, the environment requirements for both scenarios are also different.
+
+The package requirements for `mol` and `long-range` are in `mol/requirements.txt` and `long-range/requirements.txt`, respectively.
+
 ## Data Preparation
 
 ## Pretraining

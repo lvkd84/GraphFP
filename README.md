@@ -68,3 +68,16 @@ We only did contrastive pretraining on long-range benchmark so there is no `alph
 ## Finetuning
 
 To reproduce finetuning results, please follow the README in `mol` or `long-range`.
+
+## Citation
+
+```
+@inproceedings{
+    2023fragmentbased,
+    title={Fragment-based Pretraining and Finetuning on Molecular Graphs},
+    author={Luong, Kha-Dinh and Singh, Ambuj},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
+    url={https://openreview.net/forum?id=77Nq1KjmLl}
+}
+```

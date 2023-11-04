@@ -29,8 +29,42 @@ The package requirements for `mol` and `long-range` are in `mol/requirements.txt
 
 ## Data Preparation
 
+We need to prepare data before either pretraining or finetuning. This process will create and store a molecular graph and a fragment graph for each molecule based on a vocabulary of fragments. We provide the vocabulary used in the paper in both `mol/vocab.txt` or `long-range/vocab.txt`. In `long-range`, to prepare datasets, run:
+
+```
+python prepare_data.py --root <output data path> --data_file_path <raw data path> --smiles_column <column containing smiles in raw file> --vocab_file_path vocab.txt
+```
+
+Similarly, in `mol`, run:
+
+```
+python prepare_data_old.py --root <output data path> --data_file_path <raw data path> --smiles_column <column containing smiles in raw file> --vocab_file_path vocab.txt
+```
+
+Parameters:
+`root`: where the processed data should be stored.
+`data_file_path`: path to the raw data file, which is expected to be in CSV. There should be 1 column containing SMILES string. The other columns contain task labels.
+`smiles_column`: name of the column containing SMILES string in the raw data file.
+`vocab_file_path`: path to the file containing the vocabulary of fragments.
+
 ## Pretraining
+
+To run pretraining on a prepared pretraining dataset, in `mol`, run:
+
+```
+python train_gnn_predictive_old.py --root <path to prepared data> --alpha <weight parameter> --save_path <path to save pretrained model>
+```
+
+To train with only the contrastive task, set `alpha` to 0. To train with both contrastive and predictive tasks, set `alpha` to between 0 and 1. To train with only predictive tasks, set `alpha` to 1. 
+
+Similary, in `long-range`, run:
+
+```
+python train_gnn.py --root <path to prepared data> --save_path <path to save pretrained model>
+```
+
+We only did contrastive pretraining on long-range benchmark so there is no `alpha` in this case.
 
 ## Finetuning
 
-
+To reproduce finetuning results, please follow the README in `mol` or `long-range`.

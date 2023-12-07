@@ -1,3 +1,5 @@
+# https://github.com/snap-stanford/pretrain-gnns/blob/master/chem/splitters.py
+
 import torch
 import random
 import numpy as np

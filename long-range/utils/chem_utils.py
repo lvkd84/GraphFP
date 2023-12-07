@@ -1,3 +1,5 @@
+# From https://github.com/THUNLP-MT/PS-VAE
+
 from rdkit import Chem
 
 MAX_VALENCE = {'B': 3, 'Br':1, 'C':4, 'Cl':1, 'F':1, 'I':1, 'N':5, 'O':2, 'P':5, 'S':6} #, 'Se':4, 'Si':4}

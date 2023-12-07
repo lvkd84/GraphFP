@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+
+# From https://github.com/THUNLP-MT/PS-VAE
+
 import json
 from copy import copy
 import argparse

@@ -1,3 +1,5 @@
+# Borrowed from https://github.com/snap-stanford/pretrain-gnns/blob/master/chem/loader.py
+
 import os
 import torch
 import pickle

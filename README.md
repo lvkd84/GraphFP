@@ -55,7 +55,7 @@ To run pretraining on a prepared pretraining dataset, in `mol`, run:
 python train_gnn_predictive_old.py --root <path to prepared data> --alpha <weight parameter> --save_path <path to save pretrained model>
 ```
 
-To train with only the contrastive task, set `alpha` to 0. To train with both contrastive and predictive tasks, set `alpha` to between 0 and 1. To train with only predictive tasks, set `alpha` to 1. 
+To train with only the contrastive task, set `alpha` to 0. To train with both contrastive and predictive tasks, set `alpha` to between 0 and 1. To train with only predictive tasks, set `alpha` to 1. The dataset we prepared for pretraining can be accessed [here](https://drive.google.com/file/d/17QGpb3V3kQIDnqSraGBXYqt7KDVxXsEw). Unzip and specify `root` with the path to the unzipped folder. 
 
 Similary, in `long-range`, run:
 

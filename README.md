@@ -6,6 +6,7 @@ Authors: Kha-Dinh Luong, Ambuj Singh
 
 [[Paper](https://openreview.net/forum?id=77Nq1KjmLl)]
 [[ArXiv](https://arxiv.org/abs/2310.03274)]
+[[Slides](https://slideslive.com/s/khadinh-luong-130561)]
 
 In this repository, we provide the code used in the NeurIPS 2023 paper **Fragment-based Pretraining and Finetuning on Molecular Graphs**. We also include the model weights to reproduce the results from the paper.
 
